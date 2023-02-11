@@ -1,0 +1,39 @@
+h1{
+    text-align:center;
+    border-bottom: 1px solid gray;
+    margin:0;
+}
+#list1{
+    border-right:1px solid gray;
+    width: 100px;
+    margin-top: 0;
+}
+a{
+    color:black;
+    text-decoration-line: none;
+}
+#list{
+    display:grid;
+    grid-template-columns: 100px 100px 1fr;
+}
+li{
+    width: 85px;
+}
+#list3{
+    width:1200px;
+    margin-top: 0;
+}
+.list3{
+    font-weight: 1000;
+    width: 300px;
+    border-bottom: 1px solid gray;
+}
+#list4{
+    padding-left: 35px;
+}
+#title{
+    font-weight: 1000;
+    font-size:25px;
+    padding-left: 5px;
+    width:100px;
+}
