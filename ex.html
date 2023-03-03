@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            var Body={
+                SetColor:function(color){
+                document.querySelector('body').style.color=color;
+                },
+                SetBackgroundColor:function(color){
+                document.querySelector('body').style.backgroundColor=color;
+                }
+            }
+            var Links={
+                LinksSetColor:function(color){
+                var alist = document.querySelectorAll('a');
+                    var i=0
+                    while(i<alist.length){
+                        alist[i].style.color=color;
+                        i=i+1;
+                    }
+                }
+            }
+            function nightDayHandler(self){
+                if(self.value==='night'){
+                    Body.SetBackgroundColor('black');
+                    Body.SetColor('white');
+                    self.value='day';
+                    Links.LinksSetColor('powderblue')
+                }
+                else{
+                    Body.SetBackgroundColor('white');
+                    Body.SetColor('black');
+                    self.value='night';
+                    Links.LinksSetColor('blue')
+                }
+            }
+        </script>
+    </head>
+    </head>
+    <body>
+        <input type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세</p>
+    </body>
+</html>
